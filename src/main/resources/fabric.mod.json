@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "Tutorial",
+	"authors": [
+		"Dawid Legowski"
+	],
+	"contact": {
+		"homepage": "https://kaupenjoe.net",
+		"sources": "https://github.com/Tutorials-By-Kaupenjoe/Fabric-Tutorial-1.21.X"
+	},
+	"license": "MIT",
+	"icon": "assets/tutorialmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.dawid.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.dawid.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+			"net.dawid.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.6",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
