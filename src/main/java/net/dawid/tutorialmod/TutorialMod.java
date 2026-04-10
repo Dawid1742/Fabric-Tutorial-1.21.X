@@ -1,6 +1,7 @@
 package net.dawid.tutorialmod;
 
 import net.dawid.tutorialmod.block.ModBlocks;
+import net.dawid.tutorialmod.item.ModItemGroups;
 import net.dawid.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -15,5 +16,6 @@ public class TutorialMod implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModItemGroups.registerItemGroups();
 	}
 }
